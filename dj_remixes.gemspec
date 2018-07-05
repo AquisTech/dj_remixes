@@ -22,13 +22,13 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<mark_facets>, [">= 0.1.0"])
-      s.add_runtime_dependency(%q<delayed_job>, ["< 3.0.0"])
+      s.add_runtime_dependency(%q<delayed_job>)
     else
       s.add_dependency(%q<mark_facets>, [">= 0.1.0"])
-      s.add_dependency(%q<delayed_job>, ["< 3.0.0"])
+      s.add_dependency(%q<delayed_job>)
     end
   else
     s.add_dependency(%q<mark_facets>, [">= 0.1.0"])
-    s.add_dependency(%q<delayed_job>, ["< 3.0.0"])
+    s.add_dependency(%q<delayed_job>)
   end
 end
