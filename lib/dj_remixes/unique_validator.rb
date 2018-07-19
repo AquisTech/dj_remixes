@@ -13,6 +13,5 @@ class UniqueDJValidator < ActiveModel::Validator
 end
 
 Delayed::Worker.backend.send(:class_eval) do
-  # HACK: Following is commented to avoid exception but it is not good.
-  # validates_with UniqueDJValidator
+  validates_with UniqueDJValidator
 end
